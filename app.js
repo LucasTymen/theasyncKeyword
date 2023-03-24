@@ -1,11 +1,12 @@
 function withConstructor(num){
-  return new Promise((resolve, reject) => {
-    if (num === 0){
-      resolve('zero');
-    } else {
-      resolve('not zero');
+    return new Promise((resolve, reject) => {
+      if (num === 0){
+        resolve('zero');
+      } else {
+        resolve('not zero');
+      }
     }
-  });
+  );
 }
 
 withConstructor(0)
@@ -20,9 +21,6 @@ async function withAsync(num){
       return 'not zero';
     }
   }
-
-
-
 
 // Leave this commented out until step 3:
 
